@@ -11,7 +11,7 @@
 <body>
     <h1>My website</h1>
     <span>Ha pasado mucho tiempo desde que programé. Ya no recuerdo como linkear css; es lamentable.<br>
-    Intentaré hacerlo por mi cuenta de lo contrario tendré que buscar en Google.</p> <br>
+    Intentaré hacerlo por mi cuenta de lo contrario tendré que buscar en Google.</p>
     <p>Actualización 05/10/2024. He avanzado bastante, esto es ahora un !website! tiene un login 
        interactivo porporcionado por CodeWars. <br>
        Tambien subí el proyecto a GitHub, llevo un control de versiones del proyecto. <br>
@@ -19,37 +19,25 @@
        daré acceso a quien sepa las credenciales.
     </p>
     <br>
-    <br>
 <!--Espacio requerimiento de datos-->
-    <span>Regalame tu nombre aquí :)</span>
-        <div class="nombre">
-            <input type="text">
-        </div>
+<form action="guardar_usuario.php" method="post"></form>
+    <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
     <br>
-    <span>Regalame tu número aquí :)</span>
-        <div class="numero">
-            <input type="number">
-        </div>
+    <label for="numero_cel">Número de Celular:</label>
+        <input type="text" id="numero_cel" name="numero_cel" required>
     <br>
-    <span>Crea un ID de usuario</span>
-        <div class="user">
-            <input type="text">
-        </div>
+    <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required>
     <br>
-    <span>¿Qué día naciste?</span>
-        <div class="fecha">
-            <input type="date">
-        </div>
+    <label for="cumpleanos">Cumpleaños:</label>
+        <input type="date" id="cumpleanos" name="cumpleanos" required>
     <br>
-    <span>Inventa una contraseña ¿*.*?</span> 
-        <div class="contra">
-            <input type="password">
-        </div>
+    <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
     <br>
-<!--salida a pagina login-->
-    <div class="sent">
-        <input type="button" value="ENVIAR" onclick="redireccionarlogin()">
-    </div>
+    <button type="submit" id="sent">Registrar</button>
+</form>
     <br>
 <!--texto de relleno-->
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis risus nulla. Mauris non purus ac nunc tincidunt faucibus vel sit amet libero.

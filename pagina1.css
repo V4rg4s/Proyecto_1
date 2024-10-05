@@ -31,13 +31,26 @@ body {
   h1:hover {
     font-size: 55px;
   }
-  .sent input:hover {
-    font-size: 20px;
-    color: rgb(4, 0, 255);
+  .form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-left: 20px;
   }
-  .sent {
-    text-align: center;
-  }
+  #sent {
+    background-color: #5437e4; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+#sent:hover {
+    background-color: #5437e4;
+}
+
   address {
     margin-top: 6%;
     border-top: solid black 1px;
