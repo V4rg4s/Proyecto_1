@@ -250,7 +250,7 @@ form button {
 }
 
 
-/*Hoja de estilos (pagina 1 y 2*/
+/*Hoja de estilos (pagina 1)*/
 body {
   background-color: bisque;
 }
@@ -356,3 +356,4 @@ address {
       font-size: 22px; 
   }
 }
+/*Hoja de estilos (pagina 2)*/
