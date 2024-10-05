@@ -11,13 +11,14 @@
   <body>
     <!--login-->
     <div class="container">
-      <form>
+      <form id="loginForm" method="POST" action="procesar_login.php">
         <label for="username">Username:</label>
-          <input type="text" id="username" placeholder="Username here..." /><br>
+          <input type="text" id="username" placeholder="Username here..." required/><br>
             <label for="password">Password:</label>
-          <input type="password" id="password" placeholder="Password here..." /><br>
-          <button type="button" onclick="validarLogin()">Login</button>
+          <input type="password" id="password" name="password" placeholder="Password here..." required/><br>
+          <button type="submit">Login</button>
       </form>
+      <div id="error-message" style="color: red;"></div>
       <!--contenedor panda-->
       <div class="ear-l"></div>
       <div class="ear-r"></div>

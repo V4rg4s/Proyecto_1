@@ -5,53 +5,8 @@ let eyeL = document.querySelector(".eyeball-l");
 let eyeR = document.querySelector(".eyeball-r");
 let handL = document.querySelector(".hand-l");
 let handR = document.querySelector(".hand-r");
-//Return to html2
-function redireccionarpagina2(){
-  console.log("Redirigiendo a página 2");
-  window.location.href = "./pagina2.html";
-}
-//Return to login
-function redireccionarlogin(){
-  console.log("Redirigiendo a login");
-  window.location.href = "./login.html";
-}
-// Función para validar el login con datos definidos localmente
-function validarLogin(){
-  var username = document.getElementById("username").value; 
-  var password = document.getElementById("password").value; 
 
-// Validación de campos vacíos
-if (!username || !password) {
-    document.getElementById("error-message").innerText = "Por favor, complete ambos campos.";
-    return;
-  }
-
-//Guardar informacion usuario 
-function guardarNombreUsuario(username) {
-  localStorage.setItem("nombreUsuario", username);
-}
-
-// Valores fijos de usuario y contraseña
-  var usuarioCorrecto = "admin";
-  var passwordCorrecta = "12345";
-  var usuarioCorrecto = "karen";
-  var passwordCorrecta = "040622";
-  var usuarioCorrecto = "andres";
-  var passwordCorrecta = "1077";
-  
-// Validamos el login
-    if (username === usuarioCorrecto && password === passwordCorrecta) {
-    console.log("Login exitoso, redirigiendo a página 2");
-    guardarNombreUsuario(username); // Guardar el nombre de usuario
-    window.location.href = "./pagina2.html"; 
-
-// Redirigir si es correcto
-  } else {
-    console.log("Login fallido");
-    document.getElementById("error-message").innerText = "Usuario o contraseña incorrectos.";
-  }
-}
-//entrada a funcion JavaScript
+//entrada a funcion JavaScrpipt
 let normalEyeStyle = () => {
   eyeL.style.cssText = `
     left:0.6em;
@@ -77,7 +32,7 @@ let normalHandStyle = () => {
         transform: rotate(0deg)
     `;
 };
-//When clicked on username input
+//Cuando se hace clic en el imput de nombre de usuario
 usernameRef.addEventListener("focus", () => {
   eyeL.style.cssText = `
     left: 0.75em;
@@ -89,7 +44,7 @@ usernameRef.addEventListener("focus", () => {
   `;
   normalHandStyle();
 });
-//When clicked on password input
+//Cuando se hace clic en el imput de contraseña
 passwordRef.addEventListener("focus", () => {
   handL.style.cssText = `
         height: 6.56em;
@@ -105,7 +60,7 @@ passwordRef.addEventListener("focus", () => {
   `;
   normalEyeStyle();
 });
-//When clicked outside username and password input
+//Cuando se hace clic fuera de los imput
 document.addEventListener("click", (e) => {
   let clickedElem = e.target;
   if (clickedElem != usernameRef && clickedElem != passwordRef) {
