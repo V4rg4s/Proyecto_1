@@ -32,6 +32,31 @@ if ($resultado->num_rows > 0) {
     echo "Usuario o contraseña incorrectos.";
 }
 
+// Crear conexión
+if ($_POST['accion'] == 'registrar_usuario') {
+    // Lógica para guardar los datos del usuario en la base de datos
+    $nombre = $_POST['nombre'];
+    $numeroCel = $_POST['numero_cel'];
+    $id = $_POST['id'];
+    $cumpleanos = $_POST['cumpleanos'];
+
+    // Inserta los datos en la tabla
+    $query = "INSERT INTO datos_usuarios (nombre, numero_cel, id, cumpleanos) VALUES (?, ?, ?, ?)";
+    $stmt = $conexion->prepare($query);
+    $stmt->bind_param("ssiss", $nombre, $numeroCel, $id, $cumpleanos);
+
+    if ($stmt->execute()) {
+        echo "Usuario registrado con éxito";
+    } else {
+        echo "Error al registrar usuario: " . $stmt->error;
+    }
+
+    $stmt->close();
+    $conexion->close();
+}
 $stmt->close();
 $conexion->close();
 ?>
+
+
+

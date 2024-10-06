@@ -75,6 +75,35 @@ document.addEventListener("click", (e) => {
 function redireccionarlogin() {
   window.location.href= "./login.html";
 }
+
+//redireccionar a pagina2
+function redireccionar2(){
+  window.location.href= "./pagina2.html";
+}
+
+//Obtener los valores de los campos del formulario
+document.getElementById('guardar_usuario').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+const name = document.getElementById('nombre').value;
+const mobileNumber = document.getElementById('numero_cel').value;
+const id = document.getElementById('id').value;
+const birthDate = document.getElementById('cumpleanos').value;
+
+//Crear una nueva fila en la tabla
+const tableBody = document.querySelector('#dataTable tbody');
+const newRow = tableBody.insertRow();
+
+//Insertar las celdas con los datos del formulario en la nueva fila
+newRow.insertCell(0).textContent = name;
+newRow.insertCell(1).textContent = mobileNumber;
+newRow.insertCell(3).textContent = id;
+newRow.insertCell(4).textContent = birthDate; 
+
+//Limpiar formulario
+document.getElementById('guardar_usuario').reset();
+
+});
 /* by codewars
 https:www.instagram.com/p/C_p8H8cgl6M/?igsh=MThrYTh2ZXpzYm9wcg==
 */
