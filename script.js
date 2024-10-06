@@ -17,7 +17,6 @@ let normalEyeStyle = () => {
   top:0.6em;
   `;
 };
-
 let normalHandStyle = () => {
   handL.style.cssText = `
         height: 2.81em;
@@ -32,6 +31,7 @@ let normalHandStyle = () => {
         transform: rotate(0deg)
     `;
 };
+
 //Cuando se hace clic en el imput de nombre de usuario
 usernameRef.addEventListener("focus", () => {
   eyeL.style.cssText = `
@@ -44,6 +44,7 @@ usernameRef.addEventListener("focus", () => {
   `;
   normalHandStyle();
 });
+
 //Cuando se hace clic en el imput de contraseña
 passwordRef.addEventListener("focus", () => {
   handL.style.cssText = `
@@ -60,6 +61,7 @@ passwordRef.addEventListener("focus", () => {
   `;
   normalEyeStyle();
 });
+
 //Cuando se hace clic fuera de los imput
 document.addEventListener("click", (e) => {
   let clickedElem = e.target;
@@ -68,6 +70,11 @@ document.addEventListener("click", (e) => {
     normalHandStyle();
   }
 });
+
+//Redireccionaar a pagina login 
+function redireccionarlogin() {
+  window.location.href= "./login.html";
+}
 /* by codewars
 https:www.instagram.com/p/C_p8H8cgl6M/?igsh=MThrYTh2ZXpzYm9wcg==
 */

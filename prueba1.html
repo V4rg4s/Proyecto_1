@@ -20,25 +20,34 @@
     </p>
     <br>
 <!--Espacio requerimiento de datos-->
-<form action="guardar_usuario.php" method="post"></form>
-    <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-    <br>
-    <label for="numero_cel">Número de Celular:</label>
-        <input type="text" id="numero_cel" name="numero_cel" required>
-    <br>
-    <label for="id">ID:</label>
-        <input type="text" id="id" name="id" required>
-    <br>
-    <label for="cumpleanos">Cumpleaños:</label>
-        <input type="date" id="cumpleanos" name="cumpleanos" required>
-    <br>
-    <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" name="contraseña" required>
-    <br>
-    <button type="submit" id="sent">Registrar</button>
-</form>
-    <br>
+<br>
+<div id="contenedor1">
+    <div id="contenedor2">
+        <form action="guardar_usuario.php" method="post">
+            <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="numero_cel">Número de Celular:</label>
+                <input type="text" id="numero_cel" name="numero_cel" required>
+            <br>    
+            <label for="id">ID:</label>
+                <input type="text" id="id" name="id" required>
+            <br>
+            <label for="cumpleanos">Cumpleaños:</label>
+                <input type="date" id="cumpleanos" name="cumpleanos" required>
+            <br>
+            <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+            <br>
+            <button type="submit" id="sent">Registrar</button>
+        </form>
+    </div>
+</div>
+<br>
+<!--Boton a siguiente pagina-->
+<div id="redireccionar">
+    <button id="loginButton" onclick="redireccionarlogin()">Siguiente pagina</button>
+</div>
 <!--texto de relleno-->
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis risus nulla. Mauris non purus ac nunc tincidunt faucibus vel sit amet libero.
        Aliquam eget nisi a orci elementum venenatis. Vivamus lectus est, elementum quis libero non, elementum venenatis augue. Nullam at ligula posuere, 
