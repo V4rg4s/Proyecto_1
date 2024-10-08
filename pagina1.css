@@ -2,62 +2,67 @@
 body {
     background-color: bisque;
   }
-  h1 {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0;
-    background: #121FCF;
-    background: linear-gradient(to right, #1900ff 10%, #CF1512 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/*Estilos de titulo*/
+h1 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  background: #121FCF;
+  background: linear-gradient(to right, #1900ff 10%, #CF1512 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+/*Estilos de imagen*/
 .img1 {
-    position: absolute; /* Asegura que la imagen y el texto estén relacionados entre sí */
-    top: 25px;
-    right: 1px;
-    width: 202px; /* Tamaño del contenedor que corresponde al ancho de la imagen */
+  position: absolute; 
+  top: 25px;
+  right: 1px;
+  width: 202px; 
 } 
 .img1 img {
-    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-    height: auto; /* Mantiene las proporciones */
-    display: block; /* Para evitar que la imagen quede alineada con otros elementos en línea */
+  width: 100%; 
+  height: auto; 
+  display: block; 
 } 
 .img1 span {
-    display: block; /* Asegura que el texto esté debajo de la imagen */
-    text-align: center; /* Centra el texto debajo de la imagen, puedes quitar esto si no lo necesitas */
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5px; /* Ajusta el espacio entre la imagen y el texto */
-    border-top: solid black 1px;
+  display: block; 
+  text-align: center; 
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5px; 
+  border-top: solid black 1px;
 }
+/*Estilos de formulario*/
 .form{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;
-    padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding-left: 20px;
 }
+/*Estilo de pie de pagina*/
 address {
-    margin-top: 6%;
-    border-top: solid black 1px;
-    color: #121FCF;
+  margin-top: 6%;
+  border-top: solid black 1px;
+  color: #121FCF;
 }
-
+/*Estilo de caja de formulario*/
 #contenedor1{
-    margin: 20px 400px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 7%;
-    border: 2px solid black;
-    padding: 20px; 
-    max-width: 1200px; 
+  margin: 20px 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 7%;
+  border: 2px solid black;
+  padding: 20px; 
+  max-width: 1200px; 
 }
 #contenedor2 {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 1000px; 
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1000px; 
 }
+/*Estilo boton de enviar*/
 #sent {
   background-color: #614ad8; 
   color: white; 
@@ -74,33 +79,30 @@ address {
 #sent:hover {
   background-color: #5437e4;
 }
+/*Estilo boton de siguiente pagina*/
 #loginbutton{
   width: 250px;
   margin-left: 80%;
-
 }
 #loginbutton:hover {
   background-color: yellow;
 }
-
 /*H2 formulario*/
 h2 {
   font-size: 1.5em; 
   text-align: center;
 }
+/*Estilo caja de datos ingresados*/
 #contenedor3 {
   background-color: rgba(255, 255, 255, 0.8);
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
 }
-
 table, th, td {
   border: 2px solid black;
 }
-
 th, td {
   padding: 8px;
   text-align: center;
@@ -128,7 +130,6 @@ th, td {
         font-size: 18px; 
     }
   }
-  
   @media screen and (max-width: 1024px) {
     h1 {
         font-size: 40px; 
@@ -144,7 +145,6 @@ th, td {
         margin-top: 8%;
     }
   }
-  
   @media screen and (min-width: 1200px) {
     h1 {
         font-size: 55px; 
@@ -166,3 +166,4 @@ th, td {
         font-size: 22px; 
     }
   }
+  /*Fin de hoja de estilos*/
