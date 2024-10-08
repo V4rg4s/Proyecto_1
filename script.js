@@ -73,12 +73,12 @@ document.addEventListener("click", (e) => {
 
 //Redireccionaar a pagina login 
 function redireccionarlogin() {
-  window.location.href= "./login.html";
+  window.location.href= "login.html";
 }
 
 //redireccionar a pagina2
 function redireccionar2(){
-  window.location.href= "./pagina2.html";
+  window.location.href= "pagina2.html";
 }
 
 //Obtener los valores de los campos del formulario
